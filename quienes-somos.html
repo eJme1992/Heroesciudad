@@ -16,34 +16,34 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
    <body>
       <script>
-          wow = new WOW(
-            {
-              animateClass: 'animated',
-              offset:       100,
-              callback:     function(box) {
-                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-              }
-            }
-          );
-          wow.init();
-          document.getElementById('moar').onclick = function() {
-            var section = document.createElement('section');
-            section.className = 'section--purple wow fadeInDown';
-            this.parentNode.insertBefore(section, this);
-          };
-        </script>
-        <script>
-            $(window).scroll(function() {
-              if ($("#nav").offset().top > 56) {
-                  $("#logo").css("max-height", "65px");
-              } else {
-                  $("#logo").css("max-height", "100px");
-              }
-            });
+         wow = new WOW(
+           {
+             animateClass: 'animated',
+             offset:       100,
+             callback:     function(box) {
+               console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+             }
+           }
+         );
+         wow.init();
+         document.getElementById('moar').onclick = function() {
+           var section = document.createElement('section');
+           section.className = 'section--purple wow fadeInDown';
+           this.parentNode.insertBefore(section, this);
+         };
       </script>
-           <nav id="nav" class="navbar navbar-expand-sm  sticky-top">
-            <div class="container-fluid">
-               <div class="col-md-3">
+      <script>
+         $(window).scroll(function() {
+           if ($("#nav").offset().top > 56) {
+               $("#logo").css("max-height", "65px");
+           } else {
+               $("#logo").css("max-height", "100px");
+           }
+         });
+      </script>
+      <nav id="nav" class="navbar navbar-expand-sm  sticky-top">
+         <div class="container-fluid">
+            <div class="col-md-3">
                <a class="navbar-brand" href="#">
                <img id="logo" src="_/img/logo_home.jpg" alt="logo" class="img-fluid">
                </a>
@@ -80,9 +80,11 @@
                </div>
             </div>
          </div>
-         </nav>
-      <div class="text-center justify-content-center align-self-center" style="background: url('_/img/header_quienes.jpg'); min-height:200px; color:#fff;">
-         <h1>QUIÉNES SOMOS</h1>
+      </nav>
+      <div class="text-center justify-content-center align-self-center" style="background: url('_/img/header_quienes.jpg'); min-height:250px; color:#fff;">
+         <div style="padding-top:15vmin;">
+            <h1>QUIÉNES SOMOS</h1>
+         </div>
       </div>
       <div class="container">
          <div class="row cabezera text-justify card-body">
@@ -107,39 +109,31 @@
             <div class="col-md-12">
                <h1 class="mate text-center">HÉROES CIUDADANOS SE DIRIGE A</h1>
             </div>
-           <div class="col-md-4 marco text-center card-body">
-             <div style="color:#fff;background-color:#E11447; min-width:300px">
-               <h3>Jóvenes</h3>
-               <h4>Por medio de contenidos multimedia (videos y gifs) a difundirse principalmente vía redes sociales, y con la colaboración de Los Supercívicos.</h4>
-            </div>
+            <div class="col-md-4 marco text-center card-body">
+               <div style="color:#fff;background-color:#E11447; min-width:300px">
+                  <h3>Jóvenes</h3>
+                  <h4>Por medio de contenidos multimedia (videos y gifs) a difundirse principalmente vía redes sociales, y con la colaboración de Los Supercívicos.</h4>
+               </div>
             </div>
             <div class="col-md-4 marco text-center card-body">
-             <div style="color:#fff;background-color:#E11447; min-width:300px">
-               <h3>Jóvenes</h3>
-               <h4>Por medio de contenidos multimedia (videos y gifs) a difundirse principalmente vía redes sociales, y con la colaboración de Los Supercívicos.</h4>
-            </div>
+               <div style="color:#fff;background-color:#E11447; min-width:300px">
+                  <h3>Jóvenes</h3>
+                  <h4>Por medio de contenidos multimedia (videos y gifs) a difundirse principalmente vía redes sociales, y con la colaboración de Los Supercívicos.</h4>
+               </div>
             </div>
             <div class="col-md-4 marco text-center card-body">
-             <div style="color:#fff;background-color:#E11447; min-width:300px">
-               <h3>Jóvenes</h3>
-               <h4>Por medio de contenidos multimedia (videos y gifs) a difundirse principalmente vía redes sociales, y con la colaboración de Los Supercívicos.</h4>
-            </div>
+               <div style="color:#fff;background-color:#E11447; min-width:300px">
+                  <h3>Jóvenes</h3>
+                  <h4>Por medio de contenidos multimedia (videos y gifs) a difundirse principalmente vía redes sociales, y con la colaboración de Los Supercívicos.</h4>
+               </div>
             </div>
             <div class="col-md-12">
-            
-      <h2 class="sumate-qs">Todos podemos ser parte de la solución ¡Súmate!</h2>
-   </div>
-      <div class="btn-unete text-center"><a  href="#" class="btn hover-a">ÚNETE</a></div>
-   </div>
+               <h2 class="sumate-qs">Todos podemos ser parte de la solución ¡Súmate!</h2>
+               <div class="btn-unete text-center mx-auto"><a  href="#" class="btn hover-a m-x-auto">ÚNETE</a></div>
             </div>
          </div>
       </div>
-   
-   
-
-
-
-
+     
       <!--Redes lateral-->
       <div id="redes-lateral">
          <ul>
