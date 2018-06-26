@@ -18,6 +18,14 @@ body{
 
 #nav ul li a{ color:#9A9A9E; }
 
+.cabezera-h{
+	color:#fff;
+    min-height: 250px;
+}
+.cabezera-ht{
+	padding-top: 15vmin;
+}
+
 /* Modal Busqueda */
 .modal-content {min-height:200px;}
 
