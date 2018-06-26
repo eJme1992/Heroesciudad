@@ -11,23 +11,51 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
       <link href="style.css" rel="stylesheet" type="text/css">
-   </head>
+      <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
    <body>
-      <nav id="nav" class="navbar navbar-expand-sm  sticky-top">
-         <div class="container-fluid">
-            <div class="col-md-3">
+      <script>
+          wow = new WOW(
+            {
+              animateClass: 'animated',
+              offset:       100,
+              callback:     function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+              }
+            }
+          );
+          wow.init();
+          document.getElementById('moar').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+          };
+        </script>
+        <script>
+            $(window).scroll(function() {
+              if ($("#nav").offset().top > 56) {
+                  $("#logo").css("max-height", "65px");
+              } else {
+                  $("#logo").css("max-height", "100px");
+              }
+            });
+      </script>
+           <nav id="nav" class="navbar navbar-expand-sm  sticky-top">
+            <div class="container-fluid">
+               <div class="col-md-3">
                <a class="navbar-brand" href="#">
-               <img src="_/img/logo_home.jpg" alt="logo" class="img-fluid" style="max-height:50px;">
+               <img id="logo" src="_/img/logo_home.jpg" alt="logo" class="img-fluid">
                </a>
                <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                <i class="fas fa-align-justify"></i>
                </button>
             </div>
             <div class="col-md-9">
-               <div class="collapse navbar-collapse  m-x-auto" id="collapsibleNavbar">
-                  <ul class="navbar-nav text-center m-x-auto">
+               <div class="collapse navbar-collapse  mx-auto text-center" id="collapsibleNavbar">
+                  <ul class="navbar-nav text-center m-x-auto te">
                      <li class="nav-item">
-                        <a  href="quienes-somos.htm">QUIÉNES SOMOS</a> 
+                        <a  href="quienes-somos.html">QUIÉNES SOMOS</a> 
                      </li>
                      <li class="nav-item">
                         <a  href="#"> JÓVENES</a> 
@@ -52,7 +80,7 @@
                </div>
             </div>
          </div>
-      </nav>
+         </nav>
       <div class="text-center justify-content-center align-self-center" style="background: url('_/img/header_aliados.jpg'); min-height:200px; color:#fff;">
          <h1>ALIADOS</h1>
       </div>
