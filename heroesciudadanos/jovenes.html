@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Héroes Ciudadanos</title>
+      <title>Jóvenes</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -11,66 +11,38 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
       <link href="style.css" rel="stylesheet" type="text/css">
-      <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   </head>
    <body>
-      <script>
-          wow = new WOW(
-            {
-              animateClass: 'animated',
-              offset:       100,
-              callback:     function(box) {
-                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-              }
-            }
-          );
-          wow.init();
-          document.getElementById('moar').onclick = function() {
-            var section = document.createElement('section');
-            section.className = 'section--purple wow fadeInDown';
-            this.parentNode.insertBefore(section, this);
-          };
-        </script>
-        <script>
-            $(window).scroll(function() {
-              if ($("#nav").offset().top > 56) {
-                  $("#logo").css("max-height", "65px");
-              } else {
-                  $("#logo").css("max-height", "100px");
-              }
-            });
-      </script>
-           <nav id="nav" class="navbar navbar-expand-sm  sticky-top">
-            <div class="container-fluid">
-               <div class="col-md-3">
+      <nav id="nav" class="navbar navbar-expand-sm  sticky-top">
+         <div class="container-fluid">
+            <div class="col-md-3">
                <a class="navbar-brand" href="#">
-               <img id="logo" src="_/img/logo_home.jpg" alt="logo" class="img-fluid">
+               <img src="_/img/logo_home.jpg" alt="logo" class="img-fluid" style="max-height:50px;">
                </a>
                <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                <i class="fas fa-align-justify"></i>
                </button>
             </div>
             <div class="col-md-9">
-               <div class="collapse navbar-collapse  mx-auto text-center" id="collapsibleNavbar">
-                  <ul class="navbar-nav text-center m-x-auto te">
+               <div class="collapse navbar-collapse  m-x-auto" id="collapsibleNavbar">
+                  <ul class="navbar-nav text-center m-x-auto">
                      <li class="nav-item">
                         <a  href="quienes-somos.html">QUIÉNES SOMOS</a> 
                      </li>
                      <li class="nav-item">
-                        <a  href="#"> JÓVENES</a> 
+                        <a  href="jovenes.html"> JÓVENES</a> 
                      </li>
                      <li class="nav-item">
-                        <a  href="#"> NIÑOS</a> 
+                        <a  href="ninos.html"> NIÑOS</a> 
                      </li>
                      <li class="nav-item">
-                        <a  href="#"> ESCUELAS</a> 
+                        <a  href="escuelas.html"> ESCUELAS</a> 
                      </li>
                      <li class="nav-item">
-                        <a  href="#"> ALIADOS</a> 
+                        <a  href="aliados.html"> ALIADOS</a> 
                      </li>
                      <li class="nav-item">
-                        <a  href="#"> ÚNETE</a> 
+                        <a  href="unete.html"> ÚNETE</a> 
                      </li>
                      <li class="nav-item">
                         <a  data-toggle="modal" data-target="#myModal">
@@ -80,62 +52,52 @@
                </div>
             </div>
          </div>
-         </nav>
-      <!--<div class="text-center justify-content-center align-self-center" style="background: url('_/img/ninos.jpg'); min-height:200px; color:#fff;">
-      -->
-       <!--CABEZERA-->
-       <div class="text-center cabezera-h" style="background: url('_/img/escuelas.jpg');">
-        <div class="cabezera-ht">
-       <h1>ESCUELAS</h1>
+      </nav>
+      <div class="text-center justify-content-center align-self-center" style="background: url('_/img/header_heroes.jpg'); min-height:200px; color:#fff;">
+         <h1>Jóvenes</h1>
       </div>
-    </div>
        <div class="text-center rojohome card-body">
-       <h4 class="ninos-red">Maestro (a), te invitamos a conocer los materiales didácticos que Héroes Ciudadanos pone a tu disposición para contribuir al proceso de aprendizaje de tus estudiantes en materia de educación cívica y participación ciudadana.</h4> 
+       <h4 class="ninos-red">Buscamos héroes ciudadanos, jóvenes como tú, para vigilar al gobierno<br>
+        y combatir la corrupción usando la información pública.<br>Con la ayuda de Facundo te decimos cómo hacerlo.<br> ¡Conoce y comparte nuestros materiales!<br> ¡Infórmate, organízate y participa! Exige que el gobierno haga su trabajo,<br> pide >mejores servicios públicos para tu comunidad y defiende tus derechos.<br> ¡Construyamos un México de Héroes Ciudadanos!</h4> 
       </div>
 
          </div>
       </div>
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <a href="escuelas.html" ><h2 class="ninos-blue green">QUIERO HÉROES CIUDADANOS EN MI ESCUELA</h2></a>
-            </div>
-         </div>
-      </div>
+      
                
                <!-- Nav tabs -->
                <div class="col-md-12">
 
-                  <span class="d-block mx-auto pills nav nav-tabs" ><a href="#menu1" data-toggle="tab">TODO</a> <a href="#menu2" data-toggle="tab">NIÑOS</a></span>
+                  <span class="d-block mx-auto pills nav nav-tabs" ><a href="#menu1" data-toggle="tab">TODOS</a> <a href="#menu2" data-toggle="tab">GIFS</a> <a href="#menu3" data-toggle="tab">VIDEOS</a></span>
          </div>
   <!-- Tab panes -->
   <div class="tab-content">
     <div id="menu1" class="container tab-pane active"><br>
       <div class="row">
-     <div class="col-md-4">
-      <img src="_/img/cover-370x370.jpg" alt="como le hacemos" class="img-fluid">
-      <a href="#"><p class="links li-n">Programa de estudios</p></a>   
-     </div>
+     <div class="col-md-4 marco">
+   <img src="_/img/jovenes-01-370x370.gif" alt="hover-box" class="img-fluid hover-img " >         <a href="#"><p class="links">Rally #DatosEnLaCalle</p></a>
+</div>
 
-     <div class="col-md-4">
-      <img src="_/img/maestros-370x370.jpg" alt="como le hacemos" class="img-fluid">
-      <a href="#"><p class="links li-n">Guía para el docente</p></a>   
-     </div>
+<div class="col-md-4 marco">
+   <img src="_/img/jovenes-02-370x370.gif" alt="hover-box" class="img-fluid hover-img " >         <a href="#"><p class="links">Reglamento de tránsito</p></a>
+</div>
 
-     <div class="col-md-4">
-      <img src="_/img/Imag_El_Regalo-370x370.jpg" alt="como le hacemos" class="img-fluid">
-      <a href="#"><p class="links li-n">El Regalo</p></a>   
-     </div>
-
-     <div class="col-md-4">
-      <img src="_/img/Superocrurrencia-370x370.jpg" alt="como le hacemos" class="img-fluid">
-      <a href="#"><p class="links li-n">Súper Ocurrencia</p></a>   
-     </div>
-
-     <div class="col-md-4">
-      <img src="_/img/comohacemos-370x370.jpg" alt="como le hacemos" class="img-fluid">
-      <a href="#"><p class="links li-n">¿Cómo le hacemos?</p></a>   
-     </div>
+<div class="col-md-4 marco">
+   <img src="_/img/jovenes-03-370x370.gif" alt="hover-box" class="img-fluid hover-img " >         <a href="#"><p class="links">Playas limpias</p></a>
+</div>
+<div class="col-md-4 marco">
+   <img src="_/img/jovenes-04-370x370.gif" alt="hover-box" class="img-fluid hover-img " >         <a href="#"><p class="links">Becas</p></a>
+</div>
+<div class="col-md-4 marco">
+   <img src="_/img/jovenes-05-370x370.gif" alt="hover-box" class="img-fluid hover-img " >         <a href="#"><p class="links">Derechos ARCO</p></a>
+</div>
+<div class="col-md-4 marco">
+   <img src="_/img/reportero_800x800px-370x370.gif" alt="hover-box" class="img-fluid hover-img " >         <a href="#"><p class="links">Reportero ciudadano</p></a>
+</div>
+      
+          <div class="cargar-mas mx-auto d-block">
+            <a class="btn btn-cargarm ">LOAD MORE WORK</a>
+        </div>
 
       </div>
     </div>
@@ -143,33 +105,70 @@
     <div id="menu2" class="container tab-pane fade"><br>
       <div class="row">
       <div class="col-md-4">
-      <img src="_/img/cover-370x370.jpg" alt="como le hacemos" class="img-fluid">
-      <a href="#"><p class="links li-n">Programa de estudios</p></a>   
+      <img src="_/img/gif-animado-corrupción-370x370.gif" alt="como le hacemos" class="img-fluid">
+      <a href="#"><p class="links li-n">Ciclo de la corrupción</p></a>   
      </div>
 
      <div class="col-md-4">
-      <img src="_/img/maestros-370x370.jpg" alt="como le hacemos" class="img-fluid">
-      <a href="#"><p class="links li-n">Guía para el docente</p></a>   
+      <img src="_/img/tala_de_arboles_800x800px-370x370.gif" alt="como le hacemos" class="img-fluid">
+      <a href="#"><p class="links li-n">Tala de árboles</p></a>   
      </div>
 
      <div class="col-md-4">
-      <img src="_/img/Imag_El_Regalo-370x370.jpg" alt="como le hacemos" class="img-fluid">
-      <a href="#"><p class="links li-n">El Regalo</p></a>   
+      <img src="_/img/trabajador_800x800px-370x370.gif" alt="como le hacemos" class="img-fluid">
+      <a href="#"><p class="links li-n">Derechos del trabajador</p></a>   
      </div>
 
      <div class="col-md-4">
-      <img src="_/img/Superocrurrencia-370x370.jpg" alt="como le hacemos" class="img-fluid">
-      <a href="#"><p class="links li-n">Súper Ocurrencia</p></a>   
+      <img src="_/img/aerolineas_800x800px-370x370.gif" alt="como le hacemos" class="img-fluid">
+      <a href="#"><p class="links li-n">Derechos de usuarios de aerolíneas</p></a>   
      </div>
 
      <div class="col-md-4">
-      <img src="_/img/comohacemos-370x370.jpg" alt="como le hacemos" class="img-fluid">
-      <a href="#"><p class="links li-n">¿Cómo le hacemos?</p></a>   
+      <img src="_/img/reportero_800x800px-370x370.gif" alt="hover-box" class="img-fluid hover-img " >         <a href="#"><p class="links">Reportero ciudadano</p></a>  
      </div>
+
+     <div class="col-md-4">
+      <img src="_/img/jovenes-05-370x370.gif" alt="hover-box" class="img-fluid hover-img " >         <a href="#"><p class="links">Derechos ARCO</p></a>
+     </div>
+
       </div>
   </div>
 
+  <div id="menu3" class="container tab-pane fade"><br>
+      <div class="row">
+      <div class="col-md-4">
+      <img src="_/img/SUB-370x370.png" alt="como le hacemos" class="img-fluid">
+      <a href="#"><p class="links li-n">Héroes Ciudadanos</p></a>   
+     </div>
 
+     <div class="col-md-4">
+      <img src="_/img/MBImagen-370x370.png" alt="como le hacemos" class="img-fluid">
+      <a href="#"><p class="links li-n">¡Únete a los Héroes Ciudadanos!</p></a>   
+     </div>
+
+     <div class="col-md-4">
+      <img src="_/img/ImagenFuga1-370x370.png" alt="como le hacemos" class="img-fluid">
+      <a href="#"><p class="links li-n">Fuga de agua</p></a>   
+     </div>
+
+     <div class="col-md-4">
+      <img src="_/img/ImagenFacu2-370x370.png" alt="como le hacemos" class="img-fluid">
+      <a href="#"><p class="links li-n">Gasolineras</p></a>   
+     </div>
+
+     
+
+      </div>
+  </div>
+
+<div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <a href="escuelas.html" ><h2 class="ninos-blue ">ÚNETE - SÉ UN HÉROE CIUDADANO</h2></a>
+            </div>
+         </div>
+      </div>
     
    
                   
